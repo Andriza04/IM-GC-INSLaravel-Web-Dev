@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ConditionalHTML</title>
+</head>
+
+<body>
+    <h1>Berlatih Kondisional</h1>
+    <h3>Masukkan nama dan peranmu!</h3>
+    <form action="#" id="formConditional">
+        <input type="text" id="name" placeholder="Isi nama disini">
+        <input type="text" id="role" placeholder="Isi peran disini">
+        <input type="submit" value="Mulai Permainan">
+    </form>
+    <h3>Jawaban dari console game:</h3>
+    <div id="jawaban">
+    </div>
+</body>
+<script>
+    var form = document.getElementById("formConditional");
+    var jawaban = document.getElementById("jawaban");
+    var jawabanKonsol = " ";
+    form.addEventListener("submit", function (e) {
+        e.preventDefault()
+        /*
+        ATURANPERMAINAN
+        //OutputuntukInputnama=''danperan=''
+        //=>"Namaharusdiisi!"
+        //Outputuntukinputjikanama!=''danperan=''
+        //=>"HaloMikael,Pilihperanmuuntukmemulaigame!"
+        //OutputuntukInputjikanama!=''danperan'Penyihir'
+        //=>"SelamatdatangdiDuniaWerewolf,Nina"
+        //=>"HaloPenyihirNina,kamudapatmelihatsiapayangmenjadiWerewolf!"
+        //OutputuntukInputjikanama!=''danperan'Werewolf'
+       //=>"SelamatdatangdiDuniaWerewolf,Danu"
+        //"HaloWerewolfDanu,kamudapatmemilihsiapayangakankamumakanmalamini!"
+        //OutputuntukInputjikanama!=''danperan'Rakjel'
+        //=>"SelamatdatangdiDuniaWerewolf,Zero"
+        //=>"HaloRakjelZero,Kamumenjadirakyatjelata"
+        PETUNJUKMENGERJAKAN
+        1.BuatKondisionalagaroutputdarikonsolsesuaiyangdiharapkan
+        2.masukkanlahjawabandarikondisiyangdiberikanolehUserkedalamvariabel jawabanKonsol
+        */
+        //TuliskanCodekamudisini
+        var name = document.getElementById("name").value;
+        var role = document.getElementById("role").value;
+
+        if (name === "") {
+            jawabanKonsol = "Nama harus di isi!";
+        } else if (role === "") {
+            jawabanKonsol = "Halo " + name + ", Pilih peranmu untuk memulai game!";
+        } else if (role === "penyihir") {
+            jawabanKonsol = "Selamat datang di dunia werewolf, " + name + ". Halo penyihir " + name + ", kamu dapat melihat siapa yang menjadi werewolf";
+        } else if (role === "werewolf") {
+            jawabanKonsol = "selamat datang di dunia werewolf, " + name + ". Halo werewolf " + name + ", kamu dapat memilih siapa yang akan kamu makan malam ini";
+        } else{
+            jawabanKonsol = "selamat datang di dunia werewolf, " + name + ". Halo rakjel " + name + ", kamu menjadi rakyat jelata 😂";
+        }
+
+
+        //buatlahkondisionalberdasarkanduavariabeldiatasyaitunamedanrole,ketentuannyadapatdibacadiatas
+        var jawabanKonsol //=jawabandarikondisionaldi-assigndi sini
+        //CodeSampai sini
+        jawaban.innerHTML = jawabanKonsol
+    })
+</script>
+
+</html>

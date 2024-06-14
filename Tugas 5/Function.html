@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible"content="ie=edge">
+                    <title>Function</title>
+    </head>
+
+    <body>
+        <h1>BerlatihFungsi</h1>
+        <h3>ContohSoal</h3>
+        <div id= "contohJawaban">
+            </div>
+            <h3>SoalNo.1</h3>
+            <div id= "jawaban1">
+                </div>
+                <h3>SoalNo.2</h3>
+                <div id= "jawaban2">
+                    </div>
+                    <h3>SoalNo.3</h3>
+                    <div id="jawaban3">
+                        </div>
+                        <script>
+                            //CONTOH
+                            //Kamu di minta untuk membuat fungsi bernama tampilkan ( )untuk menampilkan "AkuTampil" pada halaman html.
+                            //JawabanCONTOH
+                            function tampilkan()
+                            {document.getElementById("contohJawaban").innerHTML = "Aku Tampil";}
+                                
+                            
+                            
+                            //Jalankanfunction
+                            tampilkan()
+                            //SoalNo. 1FungsiTeriak
+                            /*
+                            Buatlah sebuah fungsi bernama teriak(), yang mengembalikan nilai berupa "HaloFunction!", yang kemudian akan di tampilkan di halaman html.
+                            Tampilkan dengan cara document.getElementById("jawaban1").innerHTMLsepertidiCONTOH.
+                            */
+                            function teriak() 
+                            {document.getElementById("jawaban1").innerHTML = "Halo Function";}
+                                //Tulis Code mulai di sini
+                                //Tampilkan dengan cara document.getElementById("jawaban1").innerHTML seperti di CONTOH.
+                            
+                            //Jalankan function teriak
+                            teriak()
+                            //SoalNo.2FungsiKalikan
+                            /*
+                            Buatlah sebuah fungsibernama kalikan(), yang mengembalikan nilai berupa hasil kali dari dua parameter yang dikirim.
+                            CONTOH OUTPUT:
+                            kalikan (5,4) akan memberikan output 20
+                            Tampilkan jawaban dengan cara document.getElementById("jawaban2").innerHTML seperti di CONTOH
+                            */
+                            function kalikan(num1, num2)
+                            {return num1 * num2}
+                                document.getElementById("jawaban2").innerHTML = kalikan(5, 4);
+                                //Code kamu mulai dari sini
+                                //Tampilkan jawaban dengan cara document.getElementById("jawaban2").innerHTML seperti di CONTOH
+                            
+                            //Jalankan function kalikan
+                            
+                            //SoalNo.3FungsibuatKalimat
+                            /*
+                            Buatlah sebuah fungsi bernama buat Kalimat(), yang akan memproses seluruh parameter yang di input menjadi satu kalimat berikut:
+                            "Namasaya[Name],umursaya[Age]tahun,alamatsayadi[Address],dansayapunyahobbyyaitu[hobby]!"
+                            CONTOH:
+                            varname="Agus";
+                            varage=30;
+                            varaddress="Jln.Malioboro,Yogjakarta";
+                            varhobby="gaming";
+                            varkalimatBaru=buatKalimat(name,age,address,hobby);
+                             Akanmenampilkan:
+                             "NamasayaAgus,umursaya30tahun,alamatsayadi Jln.Malioboro,Yogjakarta,dansayapunyahobbyyaitugaming!"
+                             Tampilkandengancaradocument.getElementById("jawaban3").innerHTMLsepertidiCONTOH
+                             */
+                            function buatKalimat(name, age, address, hobby){
+                            return "Nama saya " + name + " Umur saya " + age + " Alamat saya " + address + " Hobi saya " + hobby;
+
+                            }
+                                //Codekamumulaidari sini
+                                //Tampilkandengancaradocument.getElementById("jawaban3").innerHTMLsepertidiCONTOH.
+                            
+                            //Jalankan function buatKalimat
+                            var name = "Muhammad Fakhri Andriza";
+                            var age = '16';
+                            var address = "Jln.Merdeka 1";
+                            var hobby = "Gaming dan lain nya";
+                            document.getElementById("jawaban3").innerHTML = buatKalimat(name, age, address, hobby);
+                            
+                        </script>
+    </body>
+
+</html>
