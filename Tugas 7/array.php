@@ -32,21 +32,18 @@
  echo"<br>";
  echo"<ol>";
  echo"<li>$kids[0]</li>";
- echo"<li>$kids[1]</li>";
- echo"<li>$kids[2]</li>";
- echo"<li>$kids[3]</li>";
- echo"<li>$kids[4]</li>";
- echo"<li>$kids[5]</li>";
+ for ($i = 1; $i < count($kids); $i++){
+    echo"<li>$kids[$i]</li>";
+ }
  //Lanjutkan
  echo"</ol>";
  echo"TotalAdults: ", count($adults); //Berapa panjang array adults
  echo"<br>";
  echo"<ol>";
  echo"<li>$adults[0]</li>";
- echo"<li>$adults[1]</li>";
- echo"<li>$adults[2]</li>";
- echo"<li>$adults[3]</li>";
- echo"<li>$adults[4]</li>";
+ for ($i = 1; $i < count($adults); $i++){
+    echo"<li>$adults[$i]</li>";
+ }
  //Lanjutkan
  echo"</ol>";
  /*
