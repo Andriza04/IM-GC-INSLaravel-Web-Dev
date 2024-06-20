@@ -62,10 +62,14 @@ echo reverseString("WeAreGC-InsDeveloper"). "<br>";
  //Codefunctiondisini
  //Hapuskomentardibawahiniuntukjalankancode
 
+
  function palindrome($str) {
-    $reversedStr = reverseString($str);
+    $reversedStr = '';
+    for ($i = strlen($str) - 1; $i >= 0; $i--) {
+        $reversedStr .= $str[$i];
+    }
     return $str === $reversedStr;
- }
+}
  echo palindrome("civic") ? "true" : "false";
  echo "<br>";
  echo palindrome("nababan") ? "true" : "false";
