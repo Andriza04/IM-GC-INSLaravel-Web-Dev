@@ -12,31 +12,22 @@
    require 'frog.php';
 
     $sheep = new animal("shaun");
-    $kong = new ape("kera sakti");
     $froggy = new frog("buduk");
+    $kong = new ape("kera sakti");
 
-    echo $sheep->name;
-    echo "<br>";
-    echo $sheep->cold_blooded; 
-    echo "<br>";
-    echo $kong->yell();
-    echo "<br>";
-    echo $froggy->jump();
-    echo "<br><br>";
-
-    echo "name : " . $sheep->name . "<br>";
+    echo "Name : " . $sheep->name . "<br>";
     echo "legs : " . $sheep->leg . "<br>";
-    echo "name : " . $sheep->cold_blooded . "<br><br>";
+    echo "cold blooded : " . $sheep->cold_blooded . "<br><br>";
 
-    echo "name : " . $froggy->name . "<br>";
+    echo "Name : " . $froggy->name . "<br>";
     echo "legs : " . $froggy->leg . "<br>";
-    echo "name : " . $froggy->cold_blooded . "<br>";
-    echo "jump : " , $froggy->jump() . "<br><br>";
+    echo "cold blooded : " . $froggy->cold_blooded . "<br>";
+    echo "Jump : " , $froggy->jump() . "<br><br>";
     
-    echo "name : " . $kong->name . "<br>";
+    echo "Name : " . $kong->name . "<br>";
     echo "legs : " . $kong->leg . "<br>";
-    echo "name : " . $kong->cold_blooded . "<br>";
-    echo "yell : " , $kong->yell(). "<br><br>";
+    echo "cold blooded : " . $kong->cold_blooded . "<br>";
+    echo "Yell : " , $kong->yell(). "<br><br>";
 
 
    ?>
