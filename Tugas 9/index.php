@@ -28,13 +28,17 @@
     echo "legs : " . $sheep->leg . "<br>";
     echo "name : " . $sheep->cold_blooded . "<br><br>";
 
-    echo "name : " . $kong->name . "<br>";
-    echo "legs : " . $kong->leg . "<br>";
-    echo "name : " . $kong->cold_blooded . "<br><br>";
-
     echo "name : " . $froggy->name . "<br>";
     echo "legs : " . $froggy->leg . "<br>";
-    echo "name : " . $froggy->cold_blooded . "<br><br>";
+    echo "name : " . $froggy->cold_blooded . "<br>";
+    echo "jump : " , $froggy->jump() . "<br><br>";
+    
+    echo "name : " . $kong->name . "<br>";
+    echo "legs : " . $kong->leg . "<br>";
+    echo "name : " . $kong->cold_blooded . "<br>";
+    echo "yell : " , $kong->yell(). "<br><br>";
+
+
    ?>
 </body>
 </html>
