@@ -2,7 +2,7 @@
 
 2. CREATE TABLE `users` ( 
   `id` INT AUTO_INCREMENT,
-  `name` BINARY(255),
+  `name` VARCHAR(255),
   `email` VARCHAR(255),
   `password` VARCHAR(255),
    PRIMARY KEY (`id`)
@@ -38,4 +38,4 @@ SELECT * FROM categories INNER JOIN items ON items.name = categories.name;
 
 
 5.
-UPDATE items WHERE name = 'sumsang b50' SET price = 25000000;
+UPDATE items WHERE name = 'sumsang b50' SET price = 2500000;
